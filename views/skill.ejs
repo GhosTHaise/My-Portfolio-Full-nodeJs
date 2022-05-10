@@ -1,0 +1,166 @@
+<%- include('layout.ejs'); %>
+    <main data-barba="container" data-barba-namespace="skill_section">
+        <link rel="stylesheet" href="styles/home.css">
+        <style>
+            .leftnavbar li {
+            color: #1616164d;
+            transition: all 0.5s ;
+            }
+            .leftnavbar li:hover {
+            color: #363940b9 !important;
+            background-color: #0c0c0c10;
+            }
+            .leftnavbar ul:hover .active{
+            transform: translateX(0);
+            background-color: transparent;
+            color: #1616164d !important;
+        }
+            .active{
+                color: #363940b9 !important;
+                background-color: #0c0c0c10;
+                transform: translateX(-35px);
+            }
+        </style>
+        <h4 class="title_skill" title="">Mes Compétences</h4>
+        <div class="list_skill">
+            <div class="skill_content">
+                <div  class="skill_content_element">
+                    <div class="progress mx-auto" data-value="80">
+                        <span class="progress-left">
+                            <span class="progress-bar border-primary"></span>
+                        </span>
+                        <span class="progress-right">
+                            <span class="progress-bar border-warning"></span>
+                        </span>
+                        <div class="progress-value w-100 h-100 rounded-cirle d-flex align-items-center justify-content-center">
+                            <img style="--i : 0.5" src="/images/Logo/python.png" alt=" . . . ">
+                            <div class="h2 font-weight-bold mb-0">80<sup class="small">%</sup> </div>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="competence_name">Python</h4>
+            </div>
+            <div  class="skill_content">
+                <div class="skill_content_element">
+                    <div class="progress mx-auto" data-value="40">
+                        <span class="progress-left">
+                            <span style="border-color: #f66902;;" class="progress-bar"></span>
+                        </span>
+                        <span class="progress-right">
+                            <span style="border-color: #799db8;" class="progress-bar"></span>
+                        </span>
+                        <div class="progress-value w-100 h-100 rounded-cirle d-flex align-items-center justify-content-center">
+                            <img style="--i : 0.32" src="/images/Logo/java.png" alt=" . . . ">
+                            <div class="h2 font-weight-bold mb-0">40<sup class="small">%</sup> </div>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="competence_name">Java</h4>
+            </div>
+            <div  class="skill_content">
+                <div class="skill_content_element">
+                    <div class="progress mx-auto" data-value="60">
+                        <span class="progress-left">
+                            <span style="border-color: #ff2f3a;;" class="progress-bar"></span>
+                        </span>
+                        <span class="progress-right">
+                            <span style="border-color: #ff2f3a;" class="progress-bar"></span>
+                        </span>
+                        <div class="progress-value w-100 h-100 rounded-cirle d-flex align-items-center justify-content-center">
+                            <img style="--i : 0.45" src="/images/Logo/laravel.png" alt=" . . . ">
+                            <div class="h2 font-weight-bold mb-0">60<sup class="small">%</sup> </div>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="competence_name">Laravel</h4>
+            </div>
+            <div class="skill_content">
+                <div class="skill_content_element">
+                    <div class="progress mx-auto" data-value="65">
+                        <span class="progress-left">
+                            <span style="border-color: #ffdc06;;" class="progress-bar"></span>
+                        </span>
+                        <span class="progress-right">
+                            <span style="border-color: #000000;" class="progress-bar"></span>
+                        </span>
+                        <div class="progress-value w-100 h-100 rounded-cirle d-flex align-items-center justify-content-center">
+                            <img style="--i : 0.5" src="/images/Logo/linux.png" alt=" . . . ">
+                            <div class="h2 font-weight-bold mb-0">65<sup class="small">%</sup> </div>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="competence_name">Linux</h4>
+            </div>
+            <div class="skill_content">
+                <div class="skill_content_element">
+                    <div class="progress mx-auto" data-value="50">
+                        <span class="progress-left">
+                            <span style="border-color:#22bfe0" class="progress-bar"></span>
+                        </span>
+                        <span class="progress-right">
+                            <span style="border-color:#22bfe0" class="progress-bar"></span>
+                        </span>
+                        <div class="progress-value w-100 h-100 rounded-cirle d-flex align-items-center justify-content-center">
+                            <img style="--i : 0.5" src="/images/Logo/react.png" alt=" . . . ">
+                            <div class="h2 font-weight-bold mb-0">50<sup class="small">%</sup> </div>
+                        </div>
+                    </div> 
+                </div>
+                <h4 class="competence_name">ReactJs</h4>
+            </div>
+            <div class="skill_content">
+                <div class="skill_content_element">
+                    <div class="progress mx-auto" data-value="45">
+                        <span class="progress-left">
+                            <span style="border-color: #000000;" class="progress-bar "></span>
+                        </span>
+                        <span class="progress-right">
+                            <span style="border-color: #000000;" class="progress-bar "></span>
+                        </span>
+                        <div class="progress-value w-100 h-100 rounded-cirle d-flex align-items-center justify-content-center">
+                            <img style="--i : 0.7" src="/images/Logo/symfonie.png" alt=" . . . ">
+                            <div class="h2 font-weight-bold mb-0">45<sup class="small">%</sup> </div>
+                        </div>
+                    </div> 
+                </div>
+                <h4 class="competence_name">Symfony</h4>
+            </div>
+            <div class="skill_content">
+                <div class="skill_content_element">
+                    <div class="progress mx-auto" data-value="75">
+                        <span class="progress-left">
+                            <span style="border-color: #6475b7;" class="progress-bar"></span>
+                        </span>
+                        <span class="progress-right">
+                            <span style="border-color: #6475b7;" class="progress-bar"></span>
+                        </span>
+                        <div class="progress-value w-100 h-100 rounded-cirle d-flex align-items-center justify-content-center">
+                            <img style="--i : 0.5" src="/images/Logo/php.png" alt=" . . . ">
+                            <div class="h2 font-weight-bold mb-0">75<sup class="small">%</sup> </div>
+                        </div>
+                    </div>  
+                </div>
+                <h4 class="competence_name">Php</h4>
+            </div>
+            <div class="skill_content">
+                <div class="skill_content_element">
+                    <div class="progress mx-auto" data-value="85">
+                        <span class="progress-left">
+                            <span style="border-color: #ed9104;" class="progress-bar"></span>
+                        </span>
+                        <span class="progress-right">
+                            <span style="border-color: #005f92" class="progress-bar"></span>
+                        </span>
+                        <div class="progress-value w-100 h-100 rounded-cirle d-flex align-items-center justify-content-center">
+                            <img style="--i : 0.5" src="/images/Logo/mysql.png" alt=" . . . ">
+                            <div class="h2 font-weight-bold mb-0">85<sup class="small">%</sup> </div>
+                        </div>
+                    </div>  
+                </div>
+                <h4 class="competence_name">Mysql</h4>
+            </div>
+        </div>
+    </main>
+
+    </body>
+</html>

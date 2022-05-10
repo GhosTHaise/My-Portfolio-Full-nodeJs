@@ -1,0 +1,96 @@
+
+@media (max-width:1280px) {
+
+    .list_skill{
+        margin-top: 45px;
+        display: block;
+    }
+    .skill_content{
+        width: calc(calc(100% - 16px) / 3);
+    }
+    /*Contact Responsive*/
+    .contact_body_content{
+        flex-direction: column;
+    }
+    .contents_contact{
+        border-radius: 20px 20px 0 0 ;
+    }
+    .nav_contact .reseau_social{
+        flex-direction: row;
+        height: 50px;
+        border-radius: 0 0 20px 20px;
+    }
+    .nav_contact{
+        width: 90%;
+    }
+}
+@media (max-width:990px) {
+    .skill_content{
+        width: calc(calc(100% - 16px) / 2);
+    }
+    /*Contact Responsive*/
+    .contact_body_content{
+        width: 100vh;
+        height: auto;
+        overflow: visible;
+        padding-right: 60px;
+        flex-direction: column;
+        transform: translate(-50%,-25%);
+        min-width: 100%;
+    }
+    .contents_contact{
+        flex-direction: column;
+    }
+    .__contacts{
+        justify-content: center;
+    }
+    .my_contacts p{
+        width: 341px;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .contact_information{
+        margin-top: 50px;
+    }
+    .contact_information .contact_image{
+        width: 100%;
+        height: 300px;
+        background: url('/images/contact_expend.svg');
+        background-size: 100% 85% ;
+        background-repeat: no-repeat;
+    }
+    .contents_contact div{
+        width: 100%;
+    }
+    .nav_contact .reseau_social{
+        flex-direction: row;
+        height: 50px;
+        border-radius: 0 0 20px 20px;
+    }
+    .nav_contact{
+        width: 90%;
+    }
+}
+@media (max-width:750px) {
+    .skill_content{
+        width: 100%;
+    }
+}
+
+/*Height*/
+@media (max-height:625px){
+    .list-style{
+        padding: 1em 40px 40px 40px;
+    }
+}
+@media (max-height:580px) {
+    .contact_body_content{
+        transform: translate(-50%,-22%);
+    }
+}
+@media (max-height:400px){
+    .contact_body_content{
+        transform: translate(-50%,-15%);
+    }
+}

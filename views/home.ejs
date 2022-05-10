@@ -1,0 +1,55 @@
+<%- include('layout.ejs'); %>
+    
+    
+    <main data-barba="container" data-barba-namespace="home_section">
+        <link rel="stylesheet" href="styles/home.css">
+        <style>
+            body{
+                background-color: #17b791;
+            }
+            html{
+                overflow: hidden;
+            }
+        .leftnavbar li {
+            color: #ffffff80;
+            transition: all 0.5s ;
+        }
+        .leftnavbar ul:hover .active{
+            transform: translateX(0);
+            background-color: transparent;
+            color: #ffffff80 !important;
+        }
+        .leftnavbar li:hover {
+            color: white !important;
+            transition: all 0.5s ;
+            background-color: #ffffff3b;
+        }
+        .active{
+            color: white !important;
+            background-color: #ffffff3b;
+            transform: translateX(-35px);
+        }
+        </style>
+    <div class="home">
+        <div class="profilimg">
+            <img src="images/profil.png" alt="...">
+        </div>
+        
+        <div  class="home_text">
+            <div class="home_text_center left">
+                <h4>Je suis Fitiavana</h4>
+                <p>Développeur depuis deux ans ,je souhaite désormais mettre mes compétences et
+                    mon expérience à votre service. Ayant eu l’occasion de développer plusieurs
+                    applications de différents genres ,je peux appliquer à l’équipe de développement
+                    mes connaissances techniques <span style="color: rgba(255, 255, 255, 0.8);">(HTML5,Javascript,PHP...)</span> en UI et en programmation.</p>
+                <div class="home_button">
+                    <a class="cv_btn">Mon CV</a>
+                    <a class="contact_btn"  onclick="barba.go('/contact')">Contact</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    </main>
+    </body>
+</html>

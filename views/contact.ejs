@@ -1,0 +1,77 @@
+<%- include("layout.ejs"); %>
+
+<main data-barba="container" data-barba-namespace="contact_section">
+    <link rel="stylesheet" href="styles/home.css">
+    <style>
+        .leftnavbar li {
+            color: #1616164d;
+            transition: all 0.5s ;
+            }
+            .leftnavbar li:hover {
+            color: #363940b9 !important;
+            background-color: #0c0c0c10;
+            }
+            .leftnavbar ul:hover .active{
+            transform: translateX(0);
+            background-color: transparent;
+            color: #1616164d !important;
+        }
+            .active{
+                color: #363940b9 !important;
+                background-color: #0c0c0c10;
+                transform: translateX(-35px);
+            }
+    </style>
+
+
+    <!---
+    <h4 style="color: white;" class="title_skill" title="">Contact</h4>-->
+    <div class="polyfill"></div>
+    <div class="contact_body_content">
+        <div class="contents_contact">
+            <div class="email_send">
+                <h4>Contacts</h4>
+                <p>Je suis la pour vous ! Comment puis-je vous aider ?</p>
+                <form action="/send-Mail" method="post" application/x-www-form-urlencoded>
+                    <input type="text" name="name_sender" id="neme_sender" placeholder="Entrer votre nom" required>
+                    <input type="email" name="email_sender" id="email_sender" placeholder="Entrer votre adresse email" required>
+                    <textarea name="message_sender" id="message_sender" placeholder="Go ahead , I am listening ..." required></textarea>
+                    <button type="submit">Envoyer</button>
+                </form>
+            </div>
+            <div class="contact_information">
+                <div class="contact_image"></div>
+                <div class="my_contacts">
+                    <div class="__contacts">
+                        <div class="__contacts_logo">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <p>Antananarivo , ITR 27 Andranonahoatra Itaosy</p>
+                    </div>
+                    <div class="__contacts">
+                        <div class="__contacts_logo">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <p>034 79 931 38 | 033 64 986 49</p>
+                    </div>
+                    <div class="__contacts">
+                        <div class="__contacts_logo">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <p>Nomentsoa.sambatra.Randriambololomanana @esti.mg</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav_contact">
+            <div class="reseau_social">
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=100009485341149"><i class="fa-brands fa-facebook-f"></i></a>   
+                <a target="_blank"  href="https://twitter.com/NSFitiavana"><i class="fa-brands fa-twitter"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/fitiavana-randriambololomanana-324049228"><i class="fa-brands fa-linkedin-in"></i></a>    
+            </div>
+        </div>
+    </div>
+</main> 
+
+</body>
+</html>

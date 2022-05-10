@@ -1,0 +1,34 @@
+[
+    {
+        "skill" : "Javascript",
+        "level" : 60
+    },
+    {
+        "skill" : "React",
+        "level" : 45
+    },
+    {
+        "skill" : "Java",
+        "level" : 20
+    },
+    {
+        "skill" : "Linux",
+        "level" : 50
+    },
+    {
+        "skill" : "Python",
+        "level" : 70
+    },
+    {
+        "skill" : "Laravel",
+        "level" : 55
+    },
+    {
+        "skill" : "Symfonie",
+        "level" : 35
+    },
+    {
+        "skill" : "Mysql",
+        "level" : 75
+    }
+]

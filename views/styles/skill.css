@@ -1,0 +1,130 @@
+.competence_name{
+    color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.title_skill{
+    color: #404040cc;
+    text-align: center;
+    font-size: 29px;
+    font-weight: 200;
+    letter-spacing: -1px;
+    margin-top: 45px;
+    width: 100%;
+    text-align: center;
+}
+.list_skill{
+    width: 100%;
+    height: auto;
+    padding: 4vh 40px 2vh 40px;
+    background: white;
+    display: table-cell;
+    vertical-align: middle;
+}
+.skill_content_element{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: auto;
+}
+.skill_content img{
+    width: calc(200px * var(--i));
+    height: auto;
+    transition: all .5s ease-out 0s ;
+}
+
+.skill_content{
+    justify-content: center;
+    box-sizing: border-box;
+    min-width: 295.5px;
+    width: calc(calc(100% - 16px)/4);
+    height: 200px;
+    overflow: visible;
+    display: inline-block;
+}
+
+/*Progress Bar*/
+.progress{
+    width: 150px;
+    height: 150px;
+    background: none;
+    position: relative;
+}
+.progress::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 6px solid #eee;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+.progress>span{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+.progress .progress-left{
+    left: 0;
+}
+.progress .progress-bar{
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 6px;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+}
+.progress .progress-left .progress-bar{
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+}
+.progress .progress-right{
+    right: 0;
+}
+.progress .progress-right .progress-bar{
+    left: -100%;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    -webkit-transform-origin: center right;
+    transform-origin: center right;
+}
+.progress .progress-value{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .5s ease-out 0s ;
+}
+.progress .progress-value:hover img{
+    filter: blur(14px);
+}
+.progress .progress-value:hover .h2{
+    opacity: 1;
+}
+.h2{
+    color: white;
+    position: absolute;
+    z-index: 999;
+    opacity: 0;
+    cursor: default;
+    transition: all .5s ease-out 0s ;
+}

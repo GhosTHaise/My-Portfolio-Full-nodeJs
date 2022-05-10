@@ -1,0 +1,175 @@
+.polyfill{
+    width: 100vw;
+    height: 70vh;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    clip-path: polygon(0 50%, 100% 15%, 100% 100%, 0% 100%);
+}
+.contact_body_content{
+    width: 80vw;
+    height: 520px;
+    position: absolute;
+    left: 50%;
+    top : 50%;
+    transform: translate(-50%,-50%);
+    overflow: visible;
+    display: flex;
+    flex-direction: row;
+    padding-left: 5%;
+    min-width: 942px;
+}
+.contents_contact{
+    width: 90%;
+    height: 99%;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    max-width: 932px;
+}
+.email_send,.contact_information{
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.email_send h4{
+    color: #17b791;
+    font-weight: 700;  
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+.email_send p{
+    color: #404040cc;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+.email_send input,.email_send textarea{
+    width: 100%;
+    background-color: rgba(185, 185, 185, 0.3);
+    outline: none;
+    border: none;
+    margin-bottom: 25px;
+    font-size: 12px;
+    padding: 0px 15px ;
+    font-weight: 600;
+    color: #404040c4;
+    word-spacing: 1px;
+}
+.email_send input{
+     height: 45px;
+}
+.email_send textarea{
+    height: 150px;
+    max-height: 150px;
+    min-height: 150px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.email_send button{
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border: 1px solid transparent;
+    background: #17b791;
+    color: white;
+    font-size: 16px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: all .5s ease-in-out 0s;
+}
+.email_send button:hover{
+    background:none;
+    border: 1px solid #17b791;
+    color: #17b791;
+}
+.contact_information{
+    padding: 0 0 0 3%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contact_information .contact_image{
+    width: 100%;
+    height: 60%;
+    background: url('/images/contact_expend.svg');
+    background-size: 100% 85% ;
+    background-repeat: no-repeat;
+}
+.contact_information .my_contacts{
+    width: 100%;
+    height: 40%;
+    overflow: hidden;
+}
+.contact_information .my_contacts .__contacts{
+    width: 100%;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 18px;
+    padding-left: 20px;
+    overflow: hidden;
+}
+.contact_information .my_contacts .__contacts .__contacts_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    min-width: 45px;
+    height: 100%;
+    border: 1px solid #17b791;
+    border-radius: 31px;
+    margin-right: 20px;
+}
+
+.contact_information .my_contacts .__contacts .__contacts_logo svg{
+    color:#17b791;
+    font-size: 1.2rem;
+}
+
+.contact_information .my_contacts .__contacts p{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12.1px;
+    color: #404040c4;
+    height: fit-content;
+    margin: 0;
+}
+
+.nav_contact{
+    width: 5%;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.nav_contact .reseau_social{
+    width: 100%;
+    float: left;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #17b791;
+    margin-bottom: 40px;
+    padding: 10px 0;
+    border-radius: 0 10px 20px 0;
+}
+.nav_contact .reseau_social svg{
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all .15s ease-out 0s;
+}
+.nav_contact .reseau_social svg:hover{
+    transform: scale(1.3);
+}
+.nav_contact .reseau_social a{
+    overflow: visible;
+}
+
