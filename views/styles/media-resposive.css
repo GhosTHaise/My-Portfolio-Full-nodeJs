@@ -76,8 +76,62 @@
     .skill_content{
         width: 100%;
     }
+    
 }
+@media (orientation:portrait) and (max-width : 770px){
+    body{
+        height: 100% !important;
+    }
+    main {
+        height: 100% !important;
+    }
+    html{
+        font-size: 14px;
+    }
+    .contact_body_content{
+        width: 95vw;
+        height: auto;
+        overflow: visible;
+        padding-right: 0px;
+        flex-direction: column;
+        transform: translate(-50%,-25%);
+        min-width: 100%;
+    }
+        /* home */
+        .home {
+            display: block !important;
+            height: auto !important;
+        }
+        .profilimg{
+            height: auto !important;
+            overflow: initial;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 35px;
+        }
+        .profilimg img{
+            position: relative !important;
+            width: 300px !important;
+            height: 300px  !important;
+            border-radius: 50%;
+            box-shadow: 0px 0px 5px rgba(230, 230, 230, 0.5);
+        }
 
+        .home_text{
+            width: 100% !important;
+            height: auto !important;
+            align-items: center;
+            margin: 20px 0 ;
+        }
+        .home_text_center {
+            text-align: center;
+            margin:20px 0;
+        }
+        .home_text .home_button{
+            justify-content: center;
+        }
+}
 /*Height*/
 @media (max-height:625px){
     .list-style{
@@ -93,4 +147,7 @@
     .contact_body_content{
         transform: translate(-50%,-15%);
     }
+
+
+
 }

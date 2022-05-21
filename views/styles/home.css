@@ -144,6 +144,7 @@ img{
     background-color: transparent;
     border: 1px white solid;
     color: white !important;
+    margin: 0 !important;
 }
 .contact_btn:hover{
     color: #17b791 !important;
