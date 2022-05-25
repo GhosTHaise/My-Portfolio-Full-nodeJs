@@ -29,7 +29,7 @@ app.use('/projetDB',express.static("./models/projetDB.js"));
 //Flip js
 app.use('/Flip',express.static("./views/scripts/Flip.js"));
 //Page de lancement
-app.use('/home',require('./routes/home'));
+app.use('/',require('./routes/home'));
 //Page Skill
 app.use('/',require('./routes/skill'));
 //Page contact
