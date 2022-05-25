@@ -9,9 +9,7 @@ const { expressCspHeader, INLINE, NONE, SELF } = require('express-csp-header');
 //Barba
 const PORT = process.env.PORT || 4004;
 //Json Middleware
-app.use(express.json())
-app.use(bodyParser.json())
-app.use(bodyParser.urlencoded())
+
 //csp
 app.use(expressCspHeader({ 
     policies: { 
