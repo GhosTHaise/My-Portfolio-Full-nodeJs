@@ -13,8 +13,8 @@ const PORT = process.env.PORT || 4004;
 //csp
 app.use(expressCspHeader({ 
     policies: { 
-        'default-src': [expressCspHeader.NONE], 
-        'img-src': [expressCspHeader.SELF], 
+        'default-src': "unsafe-inline", 
+        'img-src': "unsafe-inline", 
     } 
 }));
 //
