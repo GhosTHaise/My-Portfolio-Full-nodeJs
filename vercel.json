@@ -11,6 +11,33 @@
           "src": "/(.*)",
           "dest": "/"
         }
+      ],
+      "headers": [
+        {
+          "key": "Content-Security-Policy",
+          "value": "img-src 'self' data:; style-src 'self' 'unsafe-inline' *.gstatic.com *.googleapis.com https://*.icomoon.io; script-src 'self' 'unsafe-eval' 'unsafe-inline' vitals.vercel-insights.com https://*.kustomerapp.com/ *.kustomerapp.com/"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "no-referrer-when-downgrade"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key" : "Permissions-Policy",
+          "value" : "geolocation=(self), microphone=()"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        }
       ]
+
   }
   
