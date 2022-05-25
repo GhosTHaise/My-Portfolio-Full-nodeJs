@@ -6,7 +6,7 @@ const contactView = (req,res) =>{
     })
 }
 const formal_content = (text_normalized,contact) =>{
-  let header = "<h4 style='color:#7b7b7b;margin-bottom:15px;'>Chere GhosT,</h4>";
+  let header = "<h4 style='color:#7b7b7b;margin-bottom:15px;'>Cher GhosT,</h4>";
   let send_contact = "<p>Vous pouvez me contacter par </p>"+contact
   return header + text_normalized + send_contact;
 }
