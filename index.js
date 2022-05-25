@@ -1,7 +1,7 @@
 const bodyParser = require('body-parser');
 const express = require('express');
 const app = new express();
-const csp = require('express-csp-header');
+const { expressCspHeader, INLINE, NONE, SELF } = require('express-csp-header');
 
 //anime  js
 
@@ -13,11 +13,11 @@ app.use(express.json())
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded())
 //csp
-app.use(csp({
-    policies: {
-        'default-src': [csp.NONE],
-        'img-src': [csp.SELF],
-    }
+app.use(expressCspHeader({ 
+    policies: { 
+        'default-src': [expressCspHeader.NONE], 
+        'img-src': [expressCspHeader.SELF], 
+    } 
 }));
 //
 //format view
