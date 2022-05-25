@@ -200,6 +200,7 @@
     "evp_bytestokey": "^1.0.3",
     "expand-brackets": "^2.1.4",
     "express": "^4.17.3",
+    "express-csp-header": "^5.1.0",
     "extend": "^3.0.2",
     "extend-shallow": "^3.0.2",
     "extglob": "^2.0.4",
@@ -653,7 +654,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start" : "nodemon index.js"
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",

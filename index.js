@@ -1,6 +1,8 @@
 const bodyParser = require('body-parser');
 const express = require('express');
 const app = new express();
+const csp = require('express-csp-header');
+
 //anime  js
 
 
@@ -10,6 +12,14 @@ const PORT = process.env.PORT || 4004;
 app.use(express.json())
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded())
+//csp
+app.use(csp({
+    policies: {
+        'default-src': [csp.NONE],
+        'img-src': [csp.SELF],
+    }
+}));
+//
 //format view
 app.set('view engine','ejs')
 //module pour projet
