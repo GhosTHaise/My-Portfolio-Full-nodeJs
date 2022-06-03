@@ -1,6 +1,10 @@
 {
   "name": "myportfolio",
   "version": "1.0.0",
+  "engines": {
+    "node": "16.10.0",
+    "npm": "8.3.0"
+  },
   "description": "",
   "main": "index.js",
   "dependencies": {
@@ -412,6 +416,14 @@
     "on-finished": "^2.3.0",
     "once": "^1.4.0",
     "onetime": "^2.0.1",
+    "opn": "^5.5.0",
+    "optionator": "^0.8.3",
+    "ora": "^2.1.0",
+    "ordered-binary": "^1.2.5",
+    "os-browserify": "^0.3.0",
+    "pako": "^1.0.11",
+    "parcel": "^2.5.0",
+    "parcel-bundler": "^1.12.5",
     "parent-module": "^1.0.1",
     "parse-asn1": "^5.1.6",
     "parse-json": "^5.2.0",
